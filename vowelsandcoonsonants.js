@@ -2,27 +2,25 @@
 Second, print each consonant (i.e., non-vowel) in  on a new line in the same order as it appeared in . */
 
 function vowelsAndConsonants(s) {
-
-    //let s = "abcdefghijklmnopqrstuvwxyz";
-
-    let vowels = "aeiou";
-
+    let vowel = "aeiou";
     let resultVowel ="";
     let resultConsonant = "";
 
     for ( let i = 0; i < s.length; i++){
 
-        if(s[i] === "a" || s[i] === "e" || s[i] === "i"|| s[i] === "o"|| s[i] === "u" ){
+        if(vowel.includes(s[i])){
 
-             resultVowel += s[i];
-            resultVowel += "\n";
+             /* resultVowel += s[i];
+            resultVowel += "\n"; */
+            resultVowel += `${s[i]}\n`;
+            
         }else {
-            resultConsonant += s[i];
-            resultConsonant += "\n";
+            resultConsonant += s[i] + "\n";
+            
         }
-
+    
+       
     }
-    return `The Vowels are: ${resultVowel} The Consonant are: ${resultConsonant}`;
-   
+    return (resultVowel + resultConsonant);
 }
-console.log(vowelsAndConsonants("abcdefghijklmnopqrstuvwxyz"));
+console.log(vowelsAndConsonants("javascript"));
