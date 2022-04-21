@@ -5,21 +5,23 @@ Print  as the first line of output and print  as the second line of output. */
 
 function main(r) {
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
-    const PI = 3.14;
+    //const PI = 3.14;
+
+    
     // Print the area of the circle:
-    let area = PI * (r **2);
+    let area = Math.PI * (r **2);
     // Print the perimeter of the circle:
 
-    let perimeter = 2 * PI * r;
+    let perimeter = 2 * Math.PI * r;
 
-    /* try {    
+    try {    
         // Attempt to redefine the value of constant variable PI
         const PI = 3.14;
         // Attempt to print the value of PI
         console.log(PI);
     } catch(error) {
         console.error("You correctly declared 'PI' as a constant.");
-    } */
+    } 
     console.log(area);
     console.log(perimeter);
 }
